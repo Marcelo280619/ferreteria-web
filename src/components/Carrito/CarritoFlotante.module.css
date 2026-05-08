@@ -1,0 +1,43 @@
+.carritoFlotante {
+  position: fixed;
+  top: 90px;
+  right: 20px;
+  width: 320px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+}
+
+.titulo {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.total {
+  margin-top: 16px;
+  font-weight: bold;
+  text-align: right;
+}
+
+.boton {
+  width: 100%;
+  padding: 10px;
+  background-color: #054b8d;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.boton:hover {
+  background-color: #033b70;
+}

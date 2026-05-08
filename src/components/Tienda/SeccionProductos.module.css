@@ -1,0 +1,67 @@
+.seccion {
+  margin-bottom: 3rem;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #e0d6c8;
+}
+
+.titulo {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.3rem;
+  color: #1a1a1a;
+}
+
+.controles {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.arrow {
+  background: #1a1a1a;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+  line-height: 1;
+}
+
+.arrow:hover {
+  background: #c8a84b;
+  color: #1a1a1a;
+}
+
+.fila {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  padding-bottom: 0.8rem;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.fila::-webkit-scrollbar {
+  height: 4px;
+}
+
+.fila::-webkit-scrollbar-track {
+  background: #f0ebe3;
+  border-radius: 4px;
+}
+
+.fila::-webkit-scrollbar-thumb {
+  background: #c8a84b;
+  border-radius: 4px;
+}

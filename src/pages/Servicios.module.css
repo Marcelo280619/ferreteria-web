@@ -1,0 +1,34 @@
+.seccion {
+  background: #f8f5f0;
+  padding: 0 5vw 4rem;
+}
+
+.layout {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.productos {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+.carritoWrap {
+  flex: 0 0 320px;
+  position: sticky;
+  top: 90px;
+}
+
+@media (max-width: 900px) {
+  .layout {
+    flex-direction: column;
+  }
+  .carritoWrap {
+    flex: 1 1 100%;
+    width: 100%;
+    position: static;
+  }
+}

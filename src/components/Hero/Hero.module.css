@@ -1,0 +1,117 @@
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: url('/src/assets/hero.png') center/cover no-repeat;
+  background-color: #1a1a1a;
+  padding-top: 70px;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, rgba(10,10,10,0.88) 50%, rgba(10,10,10,0.4) 100%);
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+  padding: 0 5vw;
+  animation: fadeUp 0.8s ease both;
+}
+
+.badge {
+  display: inline-block;
+  background: #c8a84b;
+  color: #1a1a1a;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  padding: 0.3rem 0.9rem;
+  border-radius: 2px;
+  margin-bottom: 1.2rem;
+}
+
+.title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(2.8rem, 6vw, 5rem);
+  color: #fff;
+  line-height: 1.1;
+  margin-bottom: 1.2rem;
+}
+
+.title em {
+  font-style: italic;
+  color: #c8a84b;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: #ccc;
+  line-height: 1.7;
+  max-width: 480px;
+  margin-bottom: 2rem;
+}
+
+.actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btnPrimary {
+  background: #c8a84b;
+  color: #1a1a1a;
+  padding: 0.85rem 2rem;
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  border-radius: 3px;
+  border: 2px solid #c8a84b;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.btnPrimary:hover {
+  background: #dfc060;
+  transform: translateY(-2px);
+}
+
+.btnSecondary {
+  border: 2px solid #c8a84b;
+  color: #c8a84b;
+  padding: 0.85rem 2rem;
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  border-radius: 3px;
+  transition: background 0.2s, color 0.2s, transform 0.2s;
+}
+
+.btnSecondary:hover {
+  background: #c8a84b;
+  color: #1a1a1a;
+  transform: translateY(-2px);
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 600px) {
+  .title {
+    font-size: 2.4rem;
+  }
+  .subtitle {
+    font-size: 1rem;
+  }
+  .btnPrimary, .btnSecondary {
+    width: 100%;
+    text-align: center;
+  }
+}
