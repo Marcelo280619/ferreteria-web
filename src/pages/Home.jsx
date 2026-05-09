@@ -17,7 +17,7 @@ const propuestaData = {
     "Despacho a domicilio en toda la región del Maule",
     "Garantía en todos nuestros productos",
   ],
-  imagen: "/src/assets/propuesta.png",
+  imagen: "/assets/propuesta.png",
   estrellas: 5,
 };
 
